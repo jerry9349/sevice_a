@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderActivity">
+<!--메인의 주문대기, 주문승인, 총 주문 건수 탭 페이지가 나타나는 레이아웃-->
+
+    <!--툴바 인클루드-->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <!--각 탭 페이지가 나타나도록-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        app:tabIndicatorHeight="0dp"
+        android:layout_gravity="top"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:background="@drawable/custom_tab"
+        app:tabIndicatorColor="@color/colorSevice"
+        app:tabSelectedTextColor="@color/colorWhite"
+        app:tabTextColor="@color/colorSevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.design.widget.TabLayout>
+
+    <!--
+    app:tabBackground="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+    -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_above="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

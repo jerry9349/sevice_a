@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--main의 drawer 메뉴를 설정 하는 곳-->
+    <!--내 정보 수정-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_information"
+            android:icon="@drawable/ic_costom"
+            android:title="@string/nav_my_information" />
+
+    </group>
+<!--설정-->
+    <item
+        android:checkableBehavior="single"
+        android:title="@string/nav_setting">
+        <menu>
+            <item
+                android:icon="@drawable/ic_costom"
+                android:id="@+id/nav_setting_menu1"
+                android:title="@string/nav_setting_menu1" />
+            <item
+                android:icon="@drawable/ic_costom"
+                android:id="@+id/nav_setting_menu2"
+                android:title="@string/nav_setting_menu2" />
+        </menu>
+    </item>
+<!--도움말-->
+    <item
+        android:checkableBehavior="single"
+        android:title="@string/nav_help">
+        <menu>
+            <item
+                android:icon="@drawable/ic_costom"
+                android:id="@+id/nav_frequently_asked_questions"
+                android:title="@string/nav_frequently_asked_questions" />
+            <item
+                android:icon="@drawable/ic_costom"
+                android:id="@+id/nav_one_to_one_consulting"
+                android:title="@string/nav_one_to_one_consulting" />
+            <item
+                android:icon="@drawable/ic_costom"
+                android:id="@+id/nav_privacy_terms"
+                android:title="@string/nav_privacy_terms" />
+        </menu>
+    </item>
+    <!--로그아웃-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_costom"
+            android:title="@string/nav_logout" />
+
+    </group>
+
+</menu>
