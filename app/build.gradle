@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.example.jerry.sevice_a"
-         //sdkversion 22로 올릴것
+        //sdkversion 22로 올릴것
         minSdkVersion 22
         targetSdkVersion 27
         versionCode 1
@@ -28,4 +28,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     //drawer, navigetion을 쓰기위해 아래 줄 추가
     implementation 'com.android.support:design:27.1.1'
+    //json을 쓰기위해 아래 줄 추가
+    implementation 'com.google.code.gson:gson:2.8.2'
 }

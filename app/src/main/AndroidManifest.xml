@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jerry.sevice_a">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--맨 첫화면을 .CSignUpActivity1가 아닌 MainActivity로 바꾸면 첫 화면이 Main화면으로 뜸-->
+
+        <!-- 맨 첫화면을 .CSignUpActivity1가 아닌 MainActivity로 바꾸면 첫 화면이 Main화면으로 뜸 -->
         <activity android:name=".CSignUpActivity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +24,7 @@
         <activity android:name=".CSignUpActivity3" />
         <activity android:name=".MainActivity" />
         <activity android:name=".OrderActivity" />
+        <activity android:name=".PayActivity"></activity>
     </application>
 
 </manifest>
